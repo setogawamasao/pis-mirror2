@@ -4,7 +4,7 @@ export const setSphere = (sphere: THREE.Mesh, scene: THREE.Scene) => {
   const geometry = new THREE.SphereBufferGeometry(500, 60, 40);
   geometry.scale(-1, 1, 1);
   const texture = new THREE.TextureLoader().load(
-    `./build/textures/${getRandomNumber()}.jpg`
+    `./build/textures/${getRandomNumber()}.JPG`
   );
   const material = new THREE.MeshBasicMaterial({ map: texture });
   sphere.geometry = geometry;
